@@ -18,8 +18,8 @@
 
         .container {
             position: relative;
-            width: 80%;
-            max-width: 700px;
+            width: 90%;
+            max-width: 800px;
             text-align: center;
             background-color: #fff;
             padding: 20px;
@@ -57,38 +57,44 @@
         }
 
         .info {
-            font-size: 1.2em;
-            background-color: rgba(255, 255, 255, 0.8);
+            font-size: 1em;
+            background-color: rgba(255, 255, 255, 0.9);
             padding: 10px 15px;
             border-radius: 15px;
             position: absolute;
             display: flex;
             align-items: center;
             justify-content: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-        .info.left {
-            left: -160px;
+        .info:nth-child(1) { top: -50px; left: -170px; }
+        .info:nth-child(2) { top: 20px; left: -220px; }
+        .info:nth-child(3) { bottom: 20px; left: -180px; }
+        .info:nth-child(4) { bottom: -50px; left: -120px; }
+        .info:nth-child(5) { top: -50px; right: -170px; }
+        .info:nth-child(6) { top: 20px; right: -220px; }
+        .info:nth-child(7) { bottom: 20px; right: -180px; }
+        .info:nth-child(8) { bottom: -50px; right: -120px; }
+
+        .button {
+            margin-top: 50px;
         }
 
-        .info.right {
-            right: -160px;
+        .instagram-btn {
+            text-decoration: none;
+            background-color: #E1306C;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-size: 1em;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
         }
 
-        .info:nth-child(1) {
-            top: -60px;
-        }
-
-        .info:nth-child(2) {
-            top: 20px;
-        }
-
-        .info:nth-child(3) {
-            bottom: 20px;
-        }
-
-        .info:nth-child(4) {
-            bottom: -60px;
+        .instagram-btn:hover {
+            background-color: #C0275B;
         }
 
         footer {
@@ -105,12 +111,21 @@
         </div>
         <h1>Quem Sou Eu</h1>
         <div class="info-container">
-            <div class="info left">Formada em Publicidade</div>
-            <div class="info right">Apaixonada por Jornalismo</div>
-            <div class="info left" style="bottom: 100px;">25 anos</div>
-            <div class="info right" style="bottom: 100px;">Sou muito criativa!</div>
+            <div class="info">Formada em Publicidade</div>
+            <div class="info">Apaixonada por Jornalismo</div>
+            <div class="info">25 anos</div>
+            <div class="info">Sou muito criativa!</div>
+            <div class="info">Amo viajar</div>
+            <div class="info">Adoro cuidar de pessoas</div>
+            <div class="info">Casada</div>
+            <div class="info">Sempre disposta a aprender!</div>
         </div>
-        <footer>@meusite • Amo cuidar de pessoas</footer>
+        <div class="button">
+            <a href="https://instagram.com/seuusuario" target="_blank" class="instagram-btn">
+                Visite meu Instagram
+            </a>
+        </div>
+        <footer>@meusite • Criando conexões</footer>
     </div>
 </body>
 </html>
