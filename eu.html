@@ -62,38 +62,30 @@
 
         .info {
             font-size: 1em;
-            background-color: rgba(255, 255, 255, 0.9);
+            background-color: rgba(243, 217, 200, 0.9);
             padding: 10px 15px;
             border-radius: 15px;
             margin: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             white-space: nowrap;
+            transition: transform 0.3s ease, background-color 0.3s ease;
         }
 
         .info a {
-            color: #E1306C;
+            color:rgba(243, 217, 200, 0.9);
             text-decoration: none;
             font-weight: bold;
         }
 
-        .button {
-            margin-top: 30px;
+        /* Estilo específico para o balão do cachorro */
+        .info.cachorro {
+            background-color: #000; /* Cor preta para o balão do cachorro */
+            color: #fff; /* Texto branco para contraste */
         }
 
-        .instagram-btn {
-            text-decoration: none;
-            background-color: #E1306C;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 30px;
-            font-size: 1em;
-            font-weight: bold;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s ease;
-        }
-
-        .instagram-btn:hover {
-            background-color: #C0275B;
+        .info.cachorro:hover {
+            transform: scale(1.1); /* Aumenta o tamanho quando o mouse passar por cima */
+            background-color: #444; /* Cor de fundo um pouco mais clara quando passa o mouse */
         }
 
         footer {
@@ -111,23 +103,18 @@
         </div>
         <h1>Quem Sou Eu</h1>
         <div class="info-container">
-            <div class="info">Formada em Publicidade</div>
-            <div class="info">Apaixonada por Jornalismo</div>
-            <div class="info">25 anos</div>
-            <div class="info">Sou muito criativa!</div>
-            <div class="info">Amo viajar</div>
-            <div class="info">Adoro cuidar de pessoas</div>
-            <div class="info">Casada</div>
-            <div class="info">
-                <a href="meu-cachorro.html">Sou apaixonada por cachorros, e mais ainda pelo meu!</a>
+            <div class="info">Apaixonada por Jesus</div>
+            <div class="info">Fã de carteirinha do Chitãozinho & Xororó</div>
+            <div class="info">18 anos</div>
+            <div class="info">Sou muito comunicativa</div>
+            <div class="info">Amo viajar e viver novas experiências</div>
+            <div class="info">Adoro estar em meio a natureza</div>
+            <div class="info">Canto e toco violão</div>
+            <div class="info cachorro">
+                <a href="https://www.instagram.com/jhakeopastor" target="_blank">Sou apaixonada por cachorros, e mais ainda pelo meu!</a>
             </div>
         </div>
-        <div class="button">
-            <a href="https://instagram.com/seuusuario" target="_blank" class="instagram-btn">
-                Visite meu Instagram
-            </a>
-        </div>
-        <footer>@meusite • Criando conexões</footer>
+        <footer>Talento Tech • Sarah Eloisa</footer>
     </div>
 </body>
 
